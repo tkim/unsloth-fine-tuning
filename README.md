@@ -20,17 +20,19 @@ This notebook demonstrates fine-tuning a language model for predicting number co
 
 **Use Case:** Ideal for tasks involving pattern recognition in numerical sequences, lottery number prediction, or any sequential number generation tasks.
 
-### 2. Qwen3 4B GRPO Fine-tuning
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tkim/unsloth-fine-tuning/blob/main/Qwen3_4B_GRPO.ipynb)
+### 2. Qwen3 4B Number Prediction Fine-tuning
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tkim/unsloth-fine-tuning/blob/main/Qwen3_4B.ipynb)
 
-**File:** `Qwen3_4B_GRPO.ipynb`
+**File:** `Qwen3_4B.ipynb`
 
-This notebook demonstrates fine-tuning the Qwen3 4B model using GRPO (Group Relative Policy Optimization) with Unsloth.
+This notebook demonstrates fine-tuning the Qwen3 4B model for number combination prediction using CSV data.
 
 **Features:**
-- Uses the Qwen3 4B parameter model
-- Implements GRPO for improved training stability
-- 4-bit quantization for memory efficiency
+- Uses the Qwen3 4B parameter model with 4-bit quantization
+- Supervised fine-tuning for number sequence prediction
+- Takes all 6 numbers (5 lottery numbers + mega ball) as input
+- Predicts all 6 numbers as output
+- Memory-efficient training with LoRA
 - Optimized training parameters for Colab environment
 
 ## 🚀 Getting Started
